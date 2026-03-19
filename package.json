@@ -1,0 +1,24 @@
+{
+  "name": "@workspace/anivoid-bot",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx ./src/index.ts",
+    "build": "tsx ./build.ts",
+    "start": "node ./dist/index.cjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@workspace/db": "workspace:*",
+    "node-telegram-bot-api": "^0.66.0",
+    "drizzle-orm": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "@types/node-telegram-bot-api": "^0.64.7",
+    "esbuild": "^0.27.3",
+    "tsx": "catalog:"
+  }
+}
